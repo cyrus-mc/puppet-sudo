@@ -109,7 +109,7 @@ class sudo::common {
                 owner   => $sudo::params::configdir_owner,
                 group   => $sudo::params::configdir_group,
                 mode    => $sudo::params::configdir_mode,
-                purge   => true,
+                purge   => false,
                 recurse => true,
             }
         }
