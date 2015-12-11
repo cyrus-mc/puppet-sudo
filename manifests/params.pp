@@ -31,10 +31,11 @@ class sudo::params {
     ###########################################
 
     # ensure the presence (or absence) of sudo
-    $ensure = $::sudo_ensure ? {
-        ''      => 'present',
-        default => $::sudo_ensure
-    }
+    #$ensure = $::sudo_ensure ? {
+    #    ''      => 'present',
+    #    default => $::sudo_ensure
+    #}
+    $ensure = 'present'
 
     #### MODULE INTERNAL VARIABLES  #########
     # (Modify to adapt to unsupported OSes)
